@@ -20,7 +20,7 @@ const Home = () => {
     queryKey: ["products", currentPage],
     placeholderData: keepPreviousData,
     queryFn: () => fetchProducts(currentPage),
-    staleTime: 5000,
+    staleTime: 1000 * 60 * 5,
     retry: false,
   });
 
